@@ -3,7 +3,7 @@ import fs from "fs";
 
 import {fetch, parseSetCookie, stringifyCookies, extractTokensFromUri, tokenExpiry} from "../misc/util.js";
 
-let users;
+let users
 
 export const loadUserData = () => {
     if(!users) try {
