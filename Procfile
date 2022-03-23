@@ -1,1 +1,1 @@
-worker : node SkinPeek.js
+worker: node SkinPeek.js
