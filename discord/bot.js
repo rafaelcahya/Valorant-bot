@@ -202,6 +202,7 @@ client.on("interactionCreate", async (interaction) => {
             switch (interaction.commandName) {
                 case "guide": {
                     basicEmbed("guide")
+                    break;
                 }
                 case "skins":
                 case "shop": {
