@@ -1,5 +1,5 @@
 {
-  "token": "process.env.TOKEN",
+  "token": "",
   "fetchSkinPrices": true,
   "fetchSkinRarities": true,
   "linkItemImage": true,

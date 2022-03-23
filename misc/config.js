@@ -3,7 +3,7 @@ import fs from "fs";
 export let config = {};
 export default config;
 
-export const loadConfig = (filename="config.json") => {
+export const loadConfig = (filename=process.env.TOKEN) => {
     let loadedConfig;
 
     try {
