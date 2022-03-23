@@ -3,7 +3,7 @@ import fs from "fs";
 export let config = {};
 export default config;
 
-export const loadConfig = (filename=process.env.TOKEN, filename="config.json") => {
+export const loadConfig = (filename="config.json") => {
     let loadedConfig;
 
     try {
@@ -21,9 +21,6 @@ export const loadConfig = (filename=process.env.TOKEN, filename="config.json") =
     try {
         loadedConfig = JSON.parse(loadedConfig);
     } catch (e) {return console.error(`Could not JSON parse ${filename}! Is it corrupt?`, e)}
-
-    if(!loadedConfig.token || loadedConfig.token === "token goes here")
-        return console.error("You forgot to put your bot token in config.json!");
 
     loadedConfig.fetchSkinPrices = loadedConfig.showSkinPrices;
     loadedConfig.fetchSkinRarities = loadedConfig.showSkinRarities;
