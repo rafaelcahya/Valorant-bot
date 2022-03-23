@@ -8,7 +8,7 @@
     "node-cron": "^3.0.0"
   },
   "scripts": {
-    "start": "node SkinPeek.js"
+    "start": "serve -s build"
   },
   "type": "module"
 }
