@@ -28,7 +28,7 @@ export const loadConfig = (filename="config.json") => {
     loadedConfig.fetchSkinPrices = loadedConfig.showSkinPrices;
     loadedConfig.fetchSkinRarities = loadedConfig.showSkinRarities;
 
-    applyConfig(loadedConfig, "token", "token goes here");
+    applyConfig(loadedConfig, "token", process.env.token_discord);
     applyConfig(loadedConfig, "fetchSkinPrices", true);
     applyConfig(loadedConfig, "fetchSkinRarities", true);
     applyConfig(loadedConfig, "linkItemImage", true);
