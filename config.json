@@ -1,4 +1,5 @@
 {
+  "token": "process.env.token_discord",
   "fetchSkinPrices": true,
   "fetchSkinRarities": true,
   "linkItemImage": true,
