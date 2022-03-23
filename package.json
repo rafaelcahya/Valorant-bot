@@ -7,8 +7,5 @@
     "fuse.js": "^6.5.3",
     "node-cron": "^3.0.0"
   },
-  "scripts": {
-    "start": "serve -s build"
-  },
   "type": "module"
 }
