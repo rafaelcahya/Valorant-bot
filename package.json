@@ -7,7 +7,8 @@
     "fuse.js": "^6.5.3",
     "node-cron": "^3.0.0"
   },
-  "type": "module",
   "scripts": {
-    "start": "node SkinPeek.js"}
+    "start": "node SkinPeek.js"
+  },
+  "type": "module"
 }
