@@ -9,5 +9,5 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node index.js"}
+    "start": "node SkinPeek.js"}
 }
