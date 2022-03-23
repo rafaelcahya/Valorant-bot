@@ -64,6 +64,10 @@ client.on("ready", async () => {
 
 const commands = [
     {
+        name: "guide",
+        description: "List of commands"
+    },
+    {
         name: "skins",
         description: "Deprecated, use /shop instead"
     },
@@ -196,6 +200,9 @@ client.on("interactionCreate", async (interaction) => {
         try {
             console.log(`${interaction.user.tag} used /${interaction.commandName}`);
             switch (interaction.commandName) {
+                case "guide": {
+                    basicEmbed("guide")
+                }
                 case "skins":
                 case "shop": {
                     const valorantUser = getUser(interaction.user.id);
